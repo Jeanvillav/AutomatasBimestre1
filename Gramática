@@ -1,0 +1,37 @@
+<PROG>       → HOLA <CUERPO> ADÍOS
+
+<CUERPO>     → <DECL> <CUERPO>
+<CUERPO>     → <ASIG> <CUERPO>
+<CUERPO>     → <CONDICIONAL> <CUERPO>
+<CUERPO>     → <CICLO> <CUERPO>
+<CUERPO>     → ε
+
+<DECL>       → entero = <ID> ;
+<DECL>       → booleano = <ID> ;
+
+<ASIG>       → <ID> = <VALOR> ;
+
+<CONDICIONAL> → si ( <COND> ) entonces { <CUERPO> } sino { <CUERPO> }
+
+<CICLO>      → mientras ( <COND> ) { <CUERPO> }
+
+<COND>       → <ID> <OPREL> <VALOR>
+
+<VALOR>      → <NUM>
+<VALOR>      → verdadero
+<VALOR>      → falso
+
+<OPREL>      → <
+<OPREL>      → <=
+<OPREL>      → >
+<OPREL>      → >=
+<OPREL>      → ==
+<OPREL>      → !=
+
+<ID>         → x
+<ID>         → y
+<ID>         → esMayor
+
+<NUM>        → 5
+<NUM>        → 10
+<NUM>        → 1

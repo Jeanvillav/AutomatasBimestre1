@@ -4,15 +4,9 @@ HOLA
 entero = x;
 entero = y;
 booleano = esMayor;
-cadena = nombre;
-
-nombre = "Jean"
-
-// Entrada de datos
-leer(x);
-leer(nombre);
 
 // Asignación
+x = 5;
 y = 10;
 
 // Condicional
@@ -22,32 +16,9 @@ si (x < y) entonces {
     esMayor = verdadero;
 }
 
-// Ciclo mientras
+// Ciclo repetitivo
 mientras (x < y) {
     x = x + 1;
-}
-
-// Ciclo para
-para (entero i = 0; i < 5; i = i + 1) {
-    escribir("i = ", i);
-}
-
-// Switch-Case
-segun (x) hacer {
-    caso 1:
-        escribir("x es 1");
-        romper;
-    caso 2:
-        escribir("x es 2");
-        romper;
-    defecto:
-        escribir("otro valor");
-        romper;
-}
-
-// Función definida por el usuario
-funcion entero doble(entero n) {
-    retornar n * 2;
 }
 
 ADÍOS

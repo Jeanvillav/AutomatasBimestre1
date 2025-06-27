@@ -1,37 +1,31 @@
-<PROG>       → HOLA <CUERPO> ADÍOS
+<PROGRAMA> → HOLA <BLOQUE> ADÍOS
 
-<CUERPO>     → <DECL> <CUERPO>
-<CUERPO>     → <ASIG> <CUERPO>
-<CUERPO>     → <CONDICIONAL> <CUERPO>
-<CUERPO>     → <CICLO> <CUERPO>
-<CUERPO>     → ε
+<BLOQUE> → <DECLARACION>
+<BLOQUE> → <DECLARACION> <BLOQUE>
+<BLOQUE> → <ASIGNACION>
+<BLOQUE> → <ASIGNACION> <BLOQUE>
+<BLOQUE> → <CONDICIONAL>
+<BLOQUE> → <CONDICIONAL> <BLOQUE>
 
-<DECL>       → entero = <ID> ;
-<DECL>       → booleano = <ID> ;
+<DECLARACION> → entero = <ID> ;
+<DECLARACION> → booleano = <ID> ;
 
-<ASIG>       → <ID> = <VALOR> ;
+<ASIGNACION> → <ID> = <NUM> ;
+<ASIGNACION> → <ID> = <ID> + <NUM> ;
 
-<CONDICIONAL> → si ( <COND> ) entonces { <CUERPO> } sino { <CUERPO> }
+<CONDICIONAL> → si ( <CONDICION> ) entonces { <BLOQUE_COND> }
 
-<CICLO>      → mientras ( <COND> ) { <CUERPO> }
+<BLOQUE_COND> → <CICLO>
 
-<COND>       → <ID> <OPREL> <VALOR>
+<CICLO> → mientras ( <CONDICION> ) { <ASIGNACION> }
 
-<VALOR>      → <NUM>
-<VALOR>      → verdadero
-<VALOR>      → falso
+<CONDICION> → <ID> <OPERADOR_REL> <ID>
 
-<OPREL>      → <
-<OPREL>      → <=
-<OPREL>      → >
-<OPREL>      → >=
-<OPREL>      → ==
-<OPREL>      → !=
+<OPERADOR_REL> → <
 
-<ID>         → x
-<ID>         → y
-<ID>         → esMayor
+<ID> → x
+<ID> → y
 
-<NUM>        → 5
-<NUM>        → 10
-<NUM>        → 1
+<NUM> → 1
+<NUM> → 5
+<NUM> → 10

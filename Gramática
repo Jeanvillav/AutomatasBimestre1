@@ -8,7 +8,6 @@
 <BLOQUE> → <CONDICIONAL> <BLOQUE>
 
 <DECLARACION> → entero = <ID> ;
-<DECLARACION> → booleano = <ID> ;
 
 <ASIGNACION> → <ID> = <NUM> ;
 <ASIGNACION> → <ID> = <ID> + <NUM> ;

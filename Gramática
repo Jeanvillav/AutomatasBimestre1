@@ -7,10 +7,10 @@
 <BLOQUE> → <CONDICIONAL>
 <BLOQUE> → <CONDICIONAL> <BLOQUE>
 
-<DECLARACION> → entero = <ID> ;
+<DECLARACION> → entero = id ;
 
-<ASIGNACION> → <ID> = <NUM> ;
-<ASIGNACION> → <ID> = <ID> + <NUM> ;
+<ASIGNACION> → id = num ;
+<ASIGNACION> → id = id + num ;
 
 <CONDICIONAL> → si ( <CONDICION> ) entonces { <BLOQUE_COND> }
 
@@ -18,13 +18,4 @@
 
 <CICLO> → mientras ( <CONDICION> ) { <ASIGNACION> }
 
-<CONDICION> → <ID> <OPERADOR_REL> <ID>
-
-<OPERADOR_REL> → <
-
-<ID> → x
-<ID> → y
-
-<NUM> → 1
-<NUM> → 5
-<NUM> → 10
+<CONDICION> → id < id

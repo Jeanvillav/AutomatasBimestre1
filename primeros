@@ -1,1 +1,18 @@
+No terminal         PRIMERO
+--------------------------------
+<PROGRAMA>          { HOLA }
+
+<BLOQUE>            { entero, id, si }
+
+<DECLARACION>       { entero }
+
+<ASIGNACION>        { id }
+
+<CONDICIONAL>       { si }
+
+<BLOQUE_COND>       { mientras }
+
+<CICLO>             { mientras }
+
+<CONDICION>         { id }
 

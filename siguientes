@@ -1,0 +1,10 @@
+| No Terminal     | SIGUIENTE(X)      | Justificación                                                 |
+| --------------- | ----------------- | ------------------------------------------------------------- |
+| `<PROGRAMA>`    | `$`               | Es el símbolo inicial                                         |
+| `<BLOQUE>`      | `ADÍOS`, `}`      | Lo sigue ADÍOS en `<PROGRAMA>` o `}` desde `<CONDICIONAL>`    |
+| `<DECLARACION>` | `ADÍOS`, `}`      | Siempre es seguida por `<BLOQUE>` o final                     |
+| `<ASIGNACION>`  | `ADÍOS`, `}`, `;` | Puede estar en `<BLOQUE>`, o dentro de `{}` de un ciclo       |
+| `<CONDICIONAL>` | `ADÍOS`, `}`      | Puede ser seguido por otro `<BLOQUE>` o cerrar el bloque `{}` |
+| `<BLOQUE_COND>` | `}`               | Lo cierra el bloque del condicional                           |
+| `<CICLO>`       | `}`               | Está dentro de `{}` del bloque del `si`                       |
+| `<CONDICION>`   | `)`               | Siempre se usa como `(<CONDICION>)`                           |

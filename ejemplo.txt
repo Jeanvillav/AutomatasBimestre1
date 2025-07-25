@@ -1,20 +1,10 @@
 HOLA
-
-entero = x;
-entero = y;
-booleano = esMayor;
-
-x = 5;
-y = 10;
-
-si (x < y) entonces {
-    esMayor = falso;
-} sino {
-    esMayor = verdadero;
+entero = id ;
+id = num ;
+id = id + num ;
+si ( id < id ) entonces {
+  mientras ( id < id ) {
+    id = num ;
+  }
 }
-
-mientras (x < y) {
-    x = x + 1;
-}
-
 ADÍOS
